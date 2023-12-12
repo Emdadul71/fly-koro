@@ -5,10 +5,10 @@ import GetInspired from "./@component/get-inspired";
 import SubscribeForOffers from "../@common/subscribe-for-offers";
 import StoriesTipsGuides from "./@component/stories-tips-guides";
 
-const Home = () => {
+const Home = ({ type }: any) => {
   return (
     <>
-      <HomeHero />
+      <HomeHero type={type} />
       <TopDestinations />
       <GetInspired />
       <StoriesTipsGuides />

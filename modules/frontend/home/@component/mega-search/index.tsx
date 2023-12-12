@@ -4,7 +4,9 @@ import { Radio, Select } from "antd";
 import { useState } from "react";
 import { IoSearchOutline } from "react-icons/io5";
 
-const MegaSearch = () => {
+const MegaSearch = ({ type }: any) => {
+  const [searchType, setSearchType] = useState(type ? type : "courses");
+
   const [value, setValue] = useState(1);
 
   const onChange = (e: RadioChangeEvent) => {
@@ -14,6 +16,12 @@ const MegaSearch = () => {
 
   const handleChange = (value: string) => {
     console.log(`selected ${value}`);
+  };
+
+  const handleSubmit = () => {
+    window.location.replace(
+      searchType == "hotels" ? `/hotels/search` : `/holidays/search`
+    );
   };
 
   return (
@@ -93,7 +101,10 @@ const MegaSearch = () => {
             </div>
           </div>
         </div>
-        <button className="flex justify-center items-center bg-secondary p-[15px] rounded-md">
+        <button
+          className="flex justify-center items-center bg-secondary p-[15px] rounded-md"
+          onClick={handleSubmit}
+        >
           <IoSearchOutline className="text-3xl text-white" />
         </button>
       </div>

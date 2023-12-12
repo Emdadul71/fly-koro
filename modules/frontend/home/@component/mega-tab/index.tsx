@@ -2,7 +2,7 @@
 import { Tabs, TabsProps } from "antd";
 import MegaSearch from "../mega-search";
 
-const MegaTab = () => {
+const MegaTab = ({ type }: any) => {
   const onChange = (key: string) => {
     console.log(key);
   };
@@ -16,12 +16,12 @@ const MegaTab = () => {
     {
       key: "2",
       label: "Hotels",
-      children: <MegaSearch />,
+      children: <MegaSearch type={type} />,
     },
     {
       key: "3",
       label: "Holiday",
-      children: <MegaSearch />,
+      children: <MegaSearch type={type} />,
     },
     {
       key: "4",

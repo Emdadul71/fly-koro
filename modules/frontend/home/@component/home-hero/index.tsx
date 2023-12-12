@@ -4,7 +4,7 @@ import React from "react";
 import { FiSearch } from "react-icons/fi";
 import MegaTab from "../mega-tab";
 
-const HomeHero = () => {
+const HomeHero = ({ type }: any) => {
   return (
     <section className="relative z-0 py-[80px] h-[425px] grid place-items-center mb-5 lg:mb-[80px]">
       <div className=" absolute left-0 top-0 w-full h-full  overlay z-0"></div>
@@ -32,7 +32,7 @@ const HomeHero = () => {
           </div>
         </div>
       </div>
-      <MegaTab />
+      <MegaTab type={type} />
     </section>
   );
 };

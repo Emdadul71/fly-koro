@@ -5,7 +5,11 @@
   },
   {
     "title": "Our Services",
-    "link": "/our-services"
+    "link": "/our-services",
+    "children": [
+      { "title": "Hotels", "link": "/hotels" },
+      { "title": "Holidays", "link": "/holidays" }
+    ]
   },
   {
     "title": "About Us",

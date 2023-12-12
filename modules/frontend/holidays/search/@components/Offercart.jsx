@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 const OfferCart = ({ SRC, HotelName }) => {
   return (
     <div className="grid grid-cols-[auto,_2fr]  w-[870px] border-[1px] borer-[#DBDADE] rounded-md mt-[40px] shadow-md">
@@ -21,9 +22,11 @@ const OfferCart = ({ SRC, HotelName }) => {
       <div className="flex justify-between items-center ml-[30px] mr-[30px]">
         <div className="flex flex-col py-[20px]">
           <div>
-            <h3 className=" text-[26px] font-semibold leading-9 text-[#00000B] mb-0">
-              {HotelName}
-            </h3>
+            <Link href="/holidays/details">
+              <h3 className=" text-[26px] font-semibold leading-9 text-[#00000B] mb-0">
+                {HotelName}
+              </h3>
+            </Link>
             <div className="flex mt-[6px] m-0  gap-1">
               <svg
                 className="h-[20px] w-[20px]"
