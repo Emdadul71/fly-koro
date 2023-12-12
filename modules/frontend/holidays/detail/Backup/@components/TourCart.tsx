@@ -1,5 +1,5 @@
 import Image from "next/image";
-const TourCart = ({ SRC, HotelName }) => {
+const TourCart = ({ SRC, HotelName }: any) => {
   return (
     <div className="grid grid-cols-[auto,_2fr]  w-full border-[1px] borer-[#DBDADE] rounded-md mt-[30px] shadow-md">
       <div>
