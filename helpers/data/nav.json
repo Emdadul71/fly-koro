@@ -1,0 +1,22 @@
+[
+  {
+    "title": "Home",
+    "link": "/"
+  },
+  {
+    "title": "Our Services",
+    "link": "/our-services"
+  },
+  {
+    "title": "About Us",
+    "link": "/about-us"
+  },
+  {
+    "title": "Contact us",
+    "link": "/contact-us"
+  },
+  {
+    "title": "All Posts",
+    "link": "/all-posts"
+  }
+]
