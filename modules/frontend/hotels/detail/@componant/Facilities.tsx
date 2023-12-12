@@ -397,7 +397,7 @@ const Facilities = () => {
           <div></div>
         </div>
         <div>
-          {facilitiesData.map((data, i) => {
+          {facilitiesData.map((data: any, i: any) => {
             return (
               <p
                 className="mb-[12px] text-[13px] text-[#5D586C] leading-5 font-normal flex gap-[6px]"

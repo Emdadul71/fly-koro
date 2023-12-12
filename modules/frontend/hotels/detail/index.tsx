@@ -479,19 +479,7 @@ const HotelDetails = () => {
             <div></div>
           </div>
           <div>
-            <ConfigProvider
-              theme={{
-                token: {
-                  colorPrimary: "#00006D",
-                  colorText: "#5D586C",
-                  fontSize: "15px",
-                  lineHeight: "22px",
-                  fontWeightStrong: "400",
-                },
-              }}
-            >
-              <Tabs defaultActiveKey="1" items={items} />
-            </ConfigProvider>
+            <Tabs defaultActiveKey="1" items={items} />
           </div>
         </div>
         <div className="container-2 w-[370px]">
